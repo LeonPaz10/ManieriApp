@@ -1,38 +1,230 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.loginContainer{
+    background: rgb(21,143,126);
+    background: linear-gradient(357deg, rgba(21,143,126,1) 16%, rgba(221,222,221,1) 76%);
+    width: 100%;
+    height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.homePage{
+    background: rgb(255,255,255);
+    background: linear-gradient(357deg, rgba(255,255,255,1) 23%, rgba(231,186,75,1) 100%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Logo */
+.logo{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    justify-content: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+/*logoHome*/
+
+.logoHome{
+    width: 50px;
+}
+.logoimg1{
+   
+    width: 170px;
+    height: 110px;
+    margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+
+@media (max-width: 600px) {
+
+
+    .logoimg{
+        width: 200px;
+    }    
+    .botones{
+        display: flex;
+        flex-wrap: wrap;  
+    
+    }
+    
+    .cerrarSesion{
+        display: flex;
+        justify-content: right;
+        margin-top: 10px;
+        margin: 10px;
+        display: block;
+        inline-size: 120px;
+        border-radius: 10px 100px / 120px;
+        background: #189688;
+        color: black;
+        font-size: 15px;
+        font-family: 'Bangers', cursive;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    
+   
+
+    
+}
+
+
+
+
+
+/* Header inicio - Login*/
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding-top: 0px;
+    font-family: 'Bangers', cursive;
+
+}
+
+.trab{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    
+   
+}
+.login{
+    display: flex;
+    justify-content: center;
+}
+
+.InRe{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.form-grup{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* form*/
+
+.form{width: 300px;}
+
+
+/*Boton cerrar sesion*/
+
+.botones{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;  
+
+}
+
+.cerrarSesion{
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+    margin: 10px;
+    display: block;
+    inline-size: 120px;
+    border-radius: 10px 100px / 120px;
+    background: #189688;
+    color: black;
+    font-size: 15px;
+    font-family: 'Bangers', cursive;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+.cerrarSesion:hover{
+    background: red;
+    color: white;
+}
+
+
+/*Home - reloj*/
+
+.main_time{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 50px;
+    font-family: 'Bangers', cursive;
+
+}
+
+.main_date{
+    padding-top:0px;
+    padding-bottom: 10px;
+    font-family: 'Bangers', cursive;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/*Bienvenido*/
+
+.bienvenido{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-family: 'Bangers', cursive;
+
+}
+
+.finalidad{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    text-decoration-line: unset;
+ 
+
+}
+
+/*Botones */
+
+/*Boton tabla salarial*/
+
+.pedidaDatos{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 35px;
+    border-radius: 10px 100px / 120px;
+    inline-size: 200px;
+    background: #189688;
+    color: black;
+    font-size: 15px;
+    font-family: 'Bangers', cursive;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.pedidaDatos:hover{
+    background:#0B7463;
+    color: white;
+}
+
+
+/*Tabla salarial*/
+
+.categoria,.totalHora{
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+}  
+
+#tabla{
+    display: none;
 }
