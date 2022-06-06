@@ -135,25 +135,19 @@ const Home = () => {
       
 
       </div>
-    
 
+      <footer className='footer'>
+        <p className='footerParrafo'>© 2022 ManieriApp By  <a className='footerA' href="https://portfolio-beta-eight-58.vercel.app/"> León Paz</a>, front end developer</p>
 
-
-    
-  
-      
-      
-
-      
-    
-
-      
-
-
-
-    
-
+       <div className='iconos'>
+          <span className='span' ><i class="fab fa-instagram "> <a href="https://www.instagram.com/laionpaz10/?hl=es-la">Laionpaz10</a></i></span>
+          <span className='span' ><i class="fab fa-facebook "><a href="https://www.facebook.com/leon.paz.5203">León Paz</a></i></span>
+       </div>
        
+      </footer>
+
+
+      
     </div>
   )
 }

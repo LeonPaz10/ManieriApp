@@ -6,7 +6,7 @@ const Calculadora = () => {
         let numero1 = document.getElementById("numero1").value;
         let numero2 = document.getElementById("numero2").value;
         let operacion = document.getElementById("operacion").value;
-        let resultado = 0;
+        let resultado =  0 ; 
 
         if (operacion === "+") {
             resultado = parseInt(numero1) + parseInt(numero2);
@@ -18,7 +18,7 @@ const Calculadora = () => {
             resultado = parseInt(numero1) / parseInt(numero2);
         }
 
-        document.getElementById("resultado").value = resultado;
+        document.getElementById("resultado").value = "$ " + resultado ;
     }    
 
     const operario = 518;
