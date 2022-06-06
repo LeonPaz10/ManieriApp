@@ -5,7 +5,12 @@ import {getAuth, } from 'firebase/auth'
 import logoPosta1 from '../../assets/img/logoPosta1.png'
 import Swal from 'sweetalert2';
 import Tabla from '../tabla precios/Tabla';
+import { screen } from '@testing-library/react';
+import Calculadora from '../calculadora/Calculadora';
+
+
 const auth = getAuth(firebaseApp);
+
 
 
 
@@ -40,6 +45,8 @@ const Home = () => {
   // 
 
   //Funcion para aparecer y desaparecer la tabla
+
+
   const mostrarTabla = () => {
     let tabla = document.getElementById("tabla");
     let miValue = document.querySelector('input[name="mostrar"]');
@@ -53,9 +60,24 @@ const Home = () => {
 
 
   }
-  //
+
+   //Funcion para aparecer y desaparecer la calculadora
+
+  const mostrarCalculadora = () => {
+    let calculadora = document.getElementById("calculadora");
+    let miValue = document.querySelector('input[name="mostrarCalc"]');
+    if (miValue.value === "Calcular mi sueldo") {
+      calculadora.style.display = "block";
+      miValue.value = "Ocultar calculadora";
+    } else {
+      calculadora.style.display = "none";
+      miValue.value = "Calcular mi sueldo";
+    }
+  }
+
 
   
+  console.log(window.screen.width);
 
 
 
@@ -64,17 +86,22 @@ const Home = () => {
 
   return (
     <div className='homePage'>
-      <div className='botones container'>
+
+       <div className=' container'>
+
          <button onClick={cerrarSession} className="cerrarSesion">Cerrar sesión</button>
-          <div className='logoHome container'>
 
-              <img src={logoPosta1} alt="logo Manieri"  className='logoimg1'  hre/> 
-              
+         <div className='logoHome container'>
 
-          </div>
+          <img src={logoPosta1} alt="logo Manieri"  className='logoimg1'  href="#"/> 
+           
+        </div>
+       
       </div>
 
       <Reloj/> 
+      
+      
 
       
 
@@ -92,9 +119,25 @@ const Home = () => {
             <div className='tablaSalarial' id='tabla'>
               <Tabla/>
             </div>
-        <button className='pedidaDatos container'>Calular mi sueldo</button>
+
+       
+
+   
+      </div>
+
+
+      <div>
+        <input type="button" id='mostrarCalculadora' onClick={mostrarCalculadora} className="pedidaDatos container" value="Calcular mi sueldo" name='mostrarCalc'/>
+
+        <div className='calculadora' id='calculadora'>
+          <Calculadora/>
+        </div>
+      
 
       </div>
+    
+
+
 
     
   

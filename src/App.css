@@ -25,7 +25,8 @@
 /*logoHome*/
 
 .logoHome{
-    width: 50px;
+    display: flex;
+    justify-content: center;
 }
 .logoimg1{
    
@@ -40,38 +41,15 @@
 
 @media (max-width: 600px) {
 
-
     .logoimg{
         width: 200px;
-    }    
-    .botones{
-        display: flex;
-        flex-wrap: wrap;  
-    
-    }
-    
-    .cerrarSesion{
-        display: flex;
-        justify-content: right;
-        margin-top: 10px;
-        margin: 10px;
-        display: block;
-        inline-size: 120px;
-        border-radius: 10px 100px / 120px;
-        background: #189688;
-        color: black;
-        font-size: 15px;
-        font-family: 'Bangers', cursive;
-        padding: 5px;
-        text-align: center;
-    }
-    
-    
+    } 
+  
    
 
     
 }
-
+    
 
 
 
@@ -118,27 +96,18 @@
 
 /*Boton cerrar sesion*/
 
-.botones{
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;  
 
-}
 
 .cerrarSesion{
-    display: flex;
-    justify-content: right;
-    margin-top: 10px;
-    margin: 10px;
-    display: block;
-    inline-size: 120px;
     border-radius: 10px 100px / 120px;
+    inline-size: 100px;
     background: #189688;
     color: black;
     font-size: 15px;
     font-family: 'Bangers', cursive;
     padding: 5px;
-    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 
@@ -227,4 +196,64 @@
 
 #tabla{
     display: none;
+}
+
+/*Calcular mi sueldo*/
+
+#calculadora{
+    display: none;
+}
+/*Formulario de calculadora*/
+.formulario{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    
+
+}
+
+.select{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    inline-size: 130px;
+    background: #7FCCBB;
+    color: black;
+    font-size: 15px;
+    font-family: 'Bangers', cursive;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.letrasForm{
+    font-family: 'Bangers', cursive;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.resultado{
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+    background: #E5B33A;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+
+.resultado:hover{
+    background:  #ECC85E;
+    color: black;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 30px;
+    font-family: 'Bangers', cursive;
+
 }
